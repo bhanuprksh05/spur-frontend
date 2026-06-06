@@ -5,9 +5,11 @@ import { defineConfig } from 'vite';
 export default defineConfig({
 	plugins: [tailwindcss(), sveltekit()],
 	server: {
-		port: 5173  // dev server port (npm run dev)
+		host: '0.0.0.0',  // bind to all interfaces (accessible on LAN)
+		port: 5173        // dev server port (npm run dev)
 	},
 	preview: {
-		port: 10000  // preview server port (npm run preview) — change this to whatever you want
+		host: '0.0.0.0',  // bind to all interfaces (accessible on LAN)
+		port: 10000       // preview server port (npm run preview)
 	}
 });
