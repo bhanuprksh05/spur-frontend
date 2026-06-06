@@ -9,7 +9,8 @@ export default defineConfig({
 		port: 5173        // dev server port (npm run dev)
 	},
 	preview: {
-		host: '0.0.0.0',  // bind to all interfaces (accessible on LAN)
-		port: 10000       // preview server port (npm run preview)
+		host: '0.0.0.0',
+		port: 10000,
+		allowedHosts: ['spur-frontend-39fm.onrender.com']
 	}
 });
